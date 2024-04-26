@@ -8,8 +8,7 @@ Three module of project are:-
 -Booking System
 -Main Menu and Navigation
 
-User Management:-This module consist of functions for User-Profile Structure and Login and Logout Mechanism.
-->User-Profile Structure: It store user information such as username,password and emial id.Functions like 'Adding_new_client','login_client','WriteToFile' and 
+User Management:-This module consist of functions for User-Profile Structure and Login and Logout Mechanism.->User-Profile Structure: It store user information such as username,password and emial id.Functions like 'Adding_new_client','login_client','WriteToFile' and 
 'InitializeListing' manage user Profiles and  handle user authentication.
 ->Login and Logout Mechanism: User can log in and log out through the 'login_client' and 'logout_client' functions.
 
