@@ -1,42 +1,68 @@
 # Travelling-System-Using-C++
-This project aims to develop an online travel system, primarily focused on ticket booking, using C++.The system facilitates the booking of bus and train tickets, as well as cab reservations. This projects enables users to book tickets without any issues .
 
-The provided c++ code implements a Travelling System with functionlites for Train Booking,Bus Booking and Cab Booking.
+This project aims to develop an online travel system using C++, focused on ticket booking for buses, trains, and cabs. The system allows users to book tickets and make reservations efficiently.
 
-Three module of project are:-
+## Features
 
-->User Management
+### User Management
 
-->Booking System
+- **User-Profile Structure**: Stores user information such as username, password, and email ID. Functions for adding new clients, logging in, and writing to and initializing the user profile list.
+  
+  **Functions**:
+  - `AddNewClient()`: Adds a new client profile.
+  - `LoginClient()`: Handles user login.
+  - `LogoutClient()`: Handles user logout.
+  - `WriteToFile()`: Writes user data to a file.
+  - `InitializeListing()`: Initializes the user profile listing.
 
---Main Menu and Navigation
+### Booking System
 
-User Management:-This module consist of functions for User-Profile Structure and Login and Logout Mechanism.
+- **Train Booking**: Users can add new trains, make reservations, check seat availability, and view train details. Train data is managed in the `train_data.txt` file.
+  
+  **Functions**:
+  - `AddTrain()`: Adds new trains to the system.
+  - `ReserveTrain()`: Makes reservations for trains.
+  - `CheckTrainAvailability()`: Checks seat availability for trains.
+  - `ViewTrainDetails()`: Displays details of trains.
 
-->User-Profile Structure: It store user information such as username,password and emial id.Functions like 'Adding_new_client','login_client','WriteToFile' and 
-'InitializeListing' manage user Profiles and  handle user authentication.
+- **Bus Booking**: Users can add new buses, make reservations, check seat availability, and view bus details. Bus data is managed in the `bus_data.txt` file.
+  
+  **Functions**:
+  - `AddBus()`: Adds new buses to the system.
+  - `ReserveBus()`: Makes reservations for buses.
+  - `CheckBusAvailability()`: Checks seat availability for buses.
+  - `ViewBusDetails()`: Displays details of buses.
 
-->Login and Logout Mechanism: User can log in and log out through the 'login_client' and 'logout_client' functions.
+- **Cab Booking**: Users can book cabs by providing pickup and drop-off details. The cost is calculated based on distance. Booking details are displayed, and users can confirm or exit. Cab data is managed in the `cab_data.txt` file.
+  
+  **Functions**:
+  - `BookCab()`: Books a cab and calculates the cost based on distance.
+  - `ViewCabDetails()`: Displays details of cabs.
 
-Booking System:-This module consist of function for Train Booking,Bus Booking and Cab Booking.
+### Main Menu and Navigation
 
-->Trian Booking: User can install new trains,make reservations,check seat availability and view train details.Train data is stored in the 'train_data.txt' file.
+- **Main Menu**: Begins with a menu where users can add new profiles, log in, and exit.
+  
+  **Functions**:
+  - `DisplayMainMenu()`: Shows the main menu options.
+  - `HandleMenuSelection()`: Handles user input from the main menu.
 
-->Bus Booking: User can install new bus,make reservations,check seat availability,and view bus details.Bus data is stored in the 'bus_data.txt' file.
+- **Main Program Loop**: Runs in loops to allow navigation between different functionalities.
 
-->Cab Booking: User can book a cab by providing pickup and drop-off-details,including distance.The cost calculation is based on the distance traveled.Booking details are displayed,and users can confirm or exit.Cab data is stored in the 'cab_data.txt' file.
+- **File Handling**: Manages user profiles, train data, bus data, and cab data through text files. Functions for reading from and writing to these files.
+  
+  **Functions**:
+  - `WriteToFile()`: Writes data to text files.
+  - `LoadFromFile()`: Loads data from text files.
 
-Main Menu and Navigation:-This modulw consist of function for main menu and file handling.
+## Installation
 
-->Main Menu:- The program begins with a main menu where users can add new profiles,log in and exit.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/mouryaansh10254/Travelling-System-Using-C++.git
+   cd Travelling-System-Using-C++
 
-->Main Program Loop:- The program runs in loops,allowing users to navigate between different functionalities.
-
-->File Handling:- User profiles,train data,bus data and cab data are stored in text.File I/O functions('WriteToFile','loadFromFile)handle reading from and writing to these files.
-
-The project is designed to run only in the terminal."
-
-
-
-
-Thank you
+## Usage
+ - **Add New Profiles**: Create user profiles through the main menu.
+ - **Login and Logout**: Access user-specific features by logging in.Log out when done.
+ - **Booking Tickets**: Choose between trian,bus,or cab booking from the main menu.
